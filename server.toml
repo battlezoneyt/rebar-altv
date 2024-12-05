@@ -18,5 +18,6 @@ resources = [
     'sounds',
     'rmlui',
     'webview',
-    'core'
+    'core',
+    'mrpd',
 ]

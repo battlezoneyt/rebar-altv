@@ -2,6 +2,7 @@ import * as alt from 'alt-server';
 import { useCharacter } from '@Server/document/character.js';
 import { getHairOverlay } from '@Shared/data/hairOverlay.js';
 import { Appearance } from '../../shared/types/appearance.js';
+import { log } from 'console';
 
 export type Decorator = { overlay: string; collection: string };
 export type HairStyle = { hair: number; dlc?: string | number; color1: number; color2: number; decorator: Decorator };
@@ -303,7 +304,6 @@ export function usePlayerAppearance(player: alt.Player) {
         if (!dataDocument || !dataDocument.appearance) {
             return;
         }
-
         apply(dataDocument.appearance);
     }
 

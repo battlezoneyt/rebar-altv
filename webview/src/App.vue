@@ -29,7 +29,7 @@ onMounted(handleMount);
 
 <template>
     <div
-        class="relative left-0 top-0 flex h-full min-h-full w-full min-w-full overflow-hidden"
+        class="relative left-0 top-0 flex h-full min-h-full w-full min-w-full overflow-hidden object-cover"
         :class="isDeveloping ? ['devbg'] : []"
     >
         <DevelopmentBar v-if="isDeveloping" />
